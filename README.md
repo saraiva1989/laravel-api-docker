@@ -1,12 +1,12 @@
 # Comandos para executar o docker
 
-## Construir e iniciar os containers
+### Construir e iniciar os containers
 docker-compose up -d --build
 
-## Executar migrations (após os containers estarem rodando)
+### Executar migrations (após os containers estarem rodando)
 docker-compose exec app php artisan migrate
 
-## Executar seeds
+### Executar seeds
 docker-compose exec app php artisan db:seed
 
 Após executar os comandos acima a aplicação estará sendo executada no link http://localhost:8000/api/produtos
@@ -26,7 +26,7 @@ Deletar: DELETE /api/produtos/{id}
 
 # Comandos auxiliares
 
-## Parar os containers
+### Parar os containers
 docker-compose down
 
 # Ver logs da aplicação
